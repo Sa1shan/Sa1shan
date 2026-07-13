@@ -30,10 +30,10 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore Sa1shanWebSite/Sa1shanWebSite.csproj
 
       - name: Publish website
-        run: dotnet publish Sa1shanWebSite.csproj --configuration Release --output release
+        run: dotnet publish Sa1shanWebSite/Sa1shanWebSite.csproj --configuration Release --output release
 
       - name: Disable Jekyll
         run: touch release/wwwroot/.nojekyll
