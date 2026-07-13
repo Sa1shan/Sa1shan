@@ -499,25 +499,27 @@ footer {
 }
 
 .resume-icon {
-    width: 92px;
-    height: 112px;
+    width: 110px;
+    height: 140px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-shrink: 0;
+    overflow: hidden;
 
     border: 1px solid #6254d9;
     border-radius: 14px;
 
-    background: linear-gradient(145deg, #7867ff, #5243bf);
-    color: #ffffff;
-
-    font-size: 27px;
-    font-weight: 800;
-    letter-spacing: 2px;
+    background: #151821;
 
     box-shadow: 0 15px 35px rgba(120, 103, 255, 0.25);
+}
+
+.resume-icon img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .resume-info {
