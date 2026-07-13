@@ -1,0 +1,351 @@
+﻿@page "/"
+
+<PageTitle>Alexander — Unity Developer</PageTitle>
+
+<main>
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <p class="subtitle">UNITY / C# DEVELOPER</p>
+
+            <h1>
+                Привет, я Александр.<br/>
+                Создаю игры на Unity.
+            </h1>
+
+            <p class="hero-description">
+                Разрабатываю 2D- и 3D-игры для PC, Android и WebGL.
+                Работаю с Unity, C#, Zenject и DOTween.
+            </p>
+
+            <div class="hero-buttons">
+                <a class="button button-primary" href="#projects">
+                    Посмотреть проекты
+                </a>
+
+                <a class="button button-secondary"
+                   href="https://github.com/Sa1shan"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section resume-section" id="resume">
+        <p class="section-label">РЕЗЮМЕ</p>
+        <h2>Обо мне как о разработчике</h2>
+
+        <div class="resume-card">
+            <div class="resume-card-content">
+                <div class="resume-icon">
+                    CV
+                </div>
+
+                <div class="resume-info">
+                    <p class="resume-position">
+                        Junior Unity / C# Developer
+                    </p>
+
+                    <h3>Григорян Александр</h3>
+
+                    <p class="resume-description">
+                        Unity-разработчик с практическим опытом создания
+                        2D- и 3D-игр для PC, Android и WebGL.
+                        Работаю с архитектурой проектов, UI-системами,
+                        Dependency Injection и процедурными анимациями.
+                    </p>
+
+                    <div class="resume-details">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Zenject</span>
+                        <span>VContainer</span>
+                        <span>DOTween</span>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="resume-buttons">
+                        <button class="button button-primary"
+                                @onclick="OpenResume">
+                            Посмотреть резюме
+                        </button>
+
+                        <a class="button button-secondary"
+                           href="files/resume-alexander-grigoryan.pdf"
+                           download>
+                            Скачать PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @if (isResumeOpen)
+    {
+        <div class="resume-modal-overlay" @onclick="CloseResume">
+            <div class="resume-modal"
+                 @onclick:stopPropagation="true">
+
+                <div class="resume-modal-header">
+                    <div>
+                        <p>Резюме</p>
+                        <h3>Григорян Александр</h3>
+                    </div>
+
+                    <button class="resume-close-button"
+                            type="button"
+                            aria-label="Закрыть резюме"
+                            @onclick="CloseResume">
+                        ×
+                    </button>
+                </div>
+
+                <iframe class="resume-preview"
+                        src="files/resume-alexander-grigoryan.pdf"
+                        title="Резюме Григоряна Александра">
+                </iframe>
+
+                <div class="resume-modal-footer">
+                    <a class="button button-primary"
+                       href="files/resume-alexander-grigoryan.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Открыть в новой вкладке
+                    </a>
+
+                    <a class="button button-secondary"
+                       href="files/resume-alexander-grigoryan.pdf"
+                       download>
+                        Скачать PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    <section class="section" id="skills">
+        <p class="section-label">МОИ НАВЫКИ</p>
+        <h2>Технологии</h2>
+
+        <div class="skills">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Zenject</span>
+            <span>DOTween</span>
+            <span>Git</span>
+            <span>WebGL</span>
+            <span>Android</span>
+            <span>Blazor</span>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <p class="section-label">ПОРТФОЛИО</p>
+        <h2>Мои игры</h2>
+
+        <div class="projects-grid">
+
+            <!-- Quiz Car Parking -->
+            <article class="game-card">
+                <div class="game-image">
+                    <img src="images/game-one.png"
+                         alt="Quiz Car Parking"/>
+                </div>
+
+                <div class="game-content">
+                    <h3>Quiz Car Parking</h3>
+
+                    <p>
+                        Игра заключается в парковке машины в нужное место.
+                        В начале игроку нужно освободить путь, после чего
+                        необходимо правильно припарковать автомобиль.
+                    </p>
+
+                    <div class="game-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>WebGL</span>
+                    </div>
+
+                    <div class="game-buttons">
+                        <a class="button button-primary"
+                           href="https://sa1shan.itch.io/quiz-car-parking"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Играть
+                        </a>
+
+                        <a class="button button-secondary"
+                           href="https://github.com/Sa1shan/QuizCarParking"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FrostBound -->
+            <article class="game-card">
+                <div class="game-image">
+                    <img src="images/frostbound.png"
+                         alt="FrostBound"/>
+                </div>
+
+                <div class="game-content">
+                    <h3>FrostBound</h3>
+
+                    <p>
+                        Игрок исследует зимний мир, проходит испытания,
+                        решает задачи и продвигается по сюжетной линии.
+                    </p>
+
+                    <div class="game-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>3D</span>
+                    </div>
+
+                    <div class="game-buttons">
+                        <a class="button button-primary"
+                           href="https://Sa1shan.itch.io/FrostBound"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Играть
+                        </a>
+
+                        <a class="button button-secondary"
+                           href="https://github.com/Sa1shan/Ludum-Dare-April-2025.git"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Quiz -->
+            <article class="game-card">
+                <div class="game-image">
+                    <img src="images/Gather.png"
+                         alt="Gather your friends"/>
+                </div>
+
+                <div class="game-content">
+                    <h3>Gather your friends</h3>
+
+                    <p>
+                        В шумной ночи хэллоуина Вам приходит странное уведомление на пейджер: 
+                        предложение провести шуточный ритуал по призыву злого духа, 
+                        просыпающегося только в канун хэллоуина. 
+                    </p>
+
+                    <div class="game-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Mobile</span>
+                    </div>
+
+                    <div class="game-buttons">
+                        <a class="button button-primary"
+                           href="https://sa1shan.itch.io/gather-your-friends"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Играть
+                        </a>
+
+                        <a class="button button-secondary"
+                           href="https://github.com/Sa1shan/Ludume-Dare-58.git"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Car Parking -->
+            <article class="game-card">
+                <div class="game-image">
+                    <img src="images/spy.jpg"
+                         alt="Spy"/>
+                </div>
+
+                <div class="game-content">
+                    <h3>Spy</h3>
+
+                    <p>
+                        Мобильная игра для компании от трёх человек в жанре социальной дедукции. 
+                        Игроки задают друг другу вопросы, пытаясь вычислить шпиона, 
+                        а тот должен определить общую локацию. 
+                        Карты действий и условий делают каждую партию более разнообразной.
+                    </p>
+
+                    <div class="game-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>PC</span>
+                    </div>
+
+                    <div class="game-buttons">
+                        <a class="button button-primary"
+                           href="https://sa1shan.itch.io/spygame"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Играть
+                        </a>
+
+                        <a class="button button-secondary"
+                           href="https://github.com/Sa1shan/SpyGame.git"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <section class="section contacts-section" id="contacts">
+        <p class="section-label">СВЯЗАТЬСЯ СО МНОЙ</p>
+        <h2>Контакты</h2>
+
+        <div class="contacts">
+            <a href="https://t.me/Sa1shan"
+               target="_blank"
+               rel="noopener noreferrer">
+                Telegram
+            </a>
+
+            <a href="https://github.com/Sa1shan"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://discord.com/users/sa1shan"
+               target="_blank"
+               rel="noopener noreferrer">
+                Discord
+            </a>
+
+            <a href="mailto:grigslex06@yandex.ru">
+                Email
+            </a>
+        </div>
+    </section>
+</main>
+@code {
+    private bool isResumeOpen;
+
+    private void OpenResume()
+    {
+        isResumeOpen = true;
+    }
+
+    private void CloseResume()
+    {
+        isResumeOpen = false;
+    }
+}

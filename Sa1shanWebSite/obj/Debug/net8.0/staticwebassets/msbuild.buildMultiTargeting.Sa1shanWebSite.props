@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Sa1shanWebSite.props" />
+</Project>
