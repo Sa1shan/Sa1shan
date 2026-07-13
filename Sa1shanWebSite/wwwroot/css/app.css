@@ -724,3 +724,69 @@ footer {
         width: 100%;
     }
 }
+/* Сообщение об ошибке Blazor скрыто до появления реальной ошибки */
+#blazor-error-ui {
+    display: none;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2000;
+
+    width: 100%;
+    padding: 12px 20px;
+
+    background: #fff3cd;
+    color: #664d03;
+
+    border-top: 1px solid #ffecb5;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.2);
+}
+
+#blazor-error-ui .reload {
+    margin-left: 8px;
+    color: #664d03;
+    text-decoration: underline;
+}
+
+#blazor-error-ui .dismiss {
+    position: absolute;
+    right: 16px;
+
+    color: #664d03;
+    cursor: pointer;
+}
+.site-loader {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    background: #0b0d12;
+    color: #aeb1bb;
+}
+
+.site-loader-spinner {
+    width: 48px;
+    height: 48px;
+
+    border: 4px solid #292d39;
+    border-top-color: #7867ff;
+    border-radius: 50%;
+
+    animation: loader-spin 0.8s linear infinite;
+}
+
+.site-loader p {
+    margin: 0;
+    font-size: 15px;
+}
+
+@keyframes loader-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
