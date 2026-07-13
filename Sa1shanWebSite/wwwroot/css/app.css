@@ -494,15 +494,15 @@ footer {
     padding: 38px;
 
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
 }
 
 .resume-icon {
-    width: 110px;
-    height: 140px;
+    width: 150px;
+    height: 190px;
 
-    flex-shrink: 0;
+    flex: 0 0 150px;
     overflow: hidden;
 
     border: 1px solid #6254d9;
@@ -518,12 +518,14 @@ footer {
     height: 100%;
 
     display: block;
+
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
 }
 
 .resume-info {
-    max-width: 850px;
+    flex: 1;
+    min-width: 0;
 }
 
 .resume-position {

@@ -1,43 +1,47 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\obj\\Debug\\net8.0\\compressed\\uwdym2lv7b.gz",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\obj\\Debug\\net8.0\\compressed\\uwdym2lv7b.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\files\\resume-alexander-grigoryan.pdf",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\files\\resume-alexander-grigoryan.pdf",
       "PackagePath": "staticwebassets\\files\\resume-alexander-grigoryan.pdf"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\images\\Gather.png",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\images\\Gather.png",
       "PackagePath": "staticwebassets\\images\\Gather.png"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\images\\frostbound.png",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\images\\frostbound.png",
       "PackagePath": "staticwebassets\\images\\frostbound.png"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\images\\game-one.png",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\images\\game-one.png",
       "PackagePath": "staticwebassets\\images\\game-one.png"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\images\\spy.jpg",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\images\\spy.jpg",
       "PackagePath": "staticwebassets\\images\\spy.jpg"
     },
     {
-      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Sa1shanWebSite\\Sa1shanWebSite\\wwwroot\\index.html",
+      "Id": "C:\\Users\\griga\\OneDrive\\Documents\\Github\\Sa1shan\\Sa1shanWebSite\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
